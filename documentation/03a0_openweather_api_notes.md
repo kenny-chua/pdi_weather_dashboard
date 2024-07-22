@@ -151,3 +151,5 @@ Refer to [OpenWeather Documentation](https://openweathermap.org/api/one-call-3) 
     ...
   ]
 ```
+
+## NEXT: [Geocoding API](./03a1_openweather_geocoding_api.md)

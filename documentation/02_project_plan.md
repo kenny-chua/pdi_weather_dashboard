@@ -30,6 +30,7 @@ Create a command line interface where a user can enter a city name and gets the 
 
 * [OpenWeather](https://openweathermap.org/api)
 * [National Weather Service (NOAA)](https://www.weather.gov/documentation/services-web-api) - might be more complex to use
+* [Open-Meteo Weather Forcast API](https://open-meteo.com/en/docs)
 
 ### To Do List
 
