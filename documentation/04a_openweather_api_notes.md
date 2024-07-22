@@ -15,8 +15,8 @@
 
 Username: kenny.chua.edu  
 Email: kenny.chua.edu@outlook.com  
-Password: ********  
-API Key: ce927b7285f4ccf08f697c8c5db6e7bb  
+Password: `.env`  
+API Key: `.env`
 Created On: 07/22/2024  
 
 ## How to make an API Call for First Endpoint
