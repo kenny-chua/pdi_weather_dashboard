@@ -66,3 +66,5 @@ hourly_dataframe = pd.DataFrame(data = hourly_data)
 print(hourly_dataframe)
 
 ```
+
+*Goes againts the purpose of the capstone project if the code is already provided*

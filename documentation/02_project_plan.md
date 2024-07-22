@@ -34,10 +34,10 @@ Create a command line interface where a user can enter a city name and gets the 
 
 ### To Do List
 
-* Define location and weater scope
+* Define location and weather scope
 * Research Python [`request` library](https://codechalleng.es/tips/requests-module)
 * Research weather API's
-* Test calling API's using IDLE. Determine which Weather API to use.
+* Test calling API's using a REPL. Determine which Weather API to use.
 
 ### Technical Design
 
