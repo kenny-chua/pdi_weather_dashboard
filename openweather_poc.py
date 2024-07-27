@@ -5,10 +5,10 @@ import json
 # from pprint import pprint
 
 # OpenWeather Parameters
-base_url = os.getenv("WEATHER_URL")
-geocode_url = os.getenv("GEOCODE_URL")
+base_weather_url = os.getenv("BASE_WEATHER_URL")
 api_key = os.getenv("API_KEY")
 default_parameters = f"&appid={api_key}&mode=json&units=imperial&lang=en"
+
 
 # Obtain User Input
 print(
@@ -16,19 +16,22 @@ print(
 )
 lat = input("Latitude: ")
 lon = input("Longitude: ")
+print(base_weather_url)
 
 # Latitude and Longtitude payload contruction
-lat_long_payload = f"?lat={lat}&lon={lon}"
+lat_long_payload = f"?lat={lat}&lon={lon}" # Question, I can't end a env variable with a `?`???
 
 # Final API URL construction
-final_api_url = f"{base_url}{lat_long_payload}{default_parameters}"
+weather_api_url = f"{base_weather_url}{lat_long_payload}{default_parameters}"
 
 # Call API
-response = requests.get(final_api_url)
-# print(response.text)
+response = requests.get(weather_api_url)
+print(response.text)
+print(weather_api_url)
 
 # Convert API JSON Response to Python Dictionary Object
 data = json.loads(response.text)
+print(data)
 
 # Variable value extraction
 city = data["name"]

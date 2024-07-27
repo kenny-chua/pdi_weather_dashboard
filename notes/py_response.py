@@ -32,4 +32,14 @@
     "cod": 200,
 }
 
-# Geocoding API as Python Dictionary
+# Geocoding API as Python List with Nested Dictionary
+[
+    {
+        "name": "Ventura",
+        "local_names": {"en": "Ventura"},
+        "lat": 34.3435092,
+        "lon": -119.29560423163717,
+        "country": "US",
+        "state": "California",
+    }
+]

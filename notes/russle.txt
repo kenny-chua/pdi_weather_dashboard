@@ -1,0 +1,6 @@
+1. vs code python env yellow, code won't work until relaunch 
+2. putting a ? at the end of the base weather url doesn't work. have to put it on fstring
+3. automatic tuple
+4. tuple unpacking
+5. pprint doesn't work.
+6. print(f"The location you entered is for {resp_json.get("name")}.") # why doesn't this work?

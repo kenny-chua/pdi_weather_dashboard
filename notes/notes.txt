@@ -13,15 +13,12 @@ Example:
 https://api.openweathermap.org/data/2.5/weather?lat=34.274&lon=-119.232&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
 
 
-
-Geocoding:
+Current Weather Using City Name, State Code and/or Country Code: Deprecated
 City:
 https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&mode={mode}&units={units}&lang={lang}
 
 City Example:
 https://api.openweathermap.org/data/2.5/weather?q=Ventura&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
-
-
 
 City Name, Country Code
 https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}&mode={mode}&units={units}&lang={lang}
@@ -36,22 +33,30 @@ https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{coun
 City Name, State Code and Country Code Example
 https://api.openweathermap.org/data/2.5/weather?q=Ventura,US-CA,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
 
-
 City ID (use city.list.json.gz)
 https://api.openweathermap.org/data/2.5/weather?id=5405878&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
 
 Zip Code (if country = blank, assume USA)
 https://api.openweathermap.org/data/2.5/weather?zip=93001,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
 
-
-Direct Geocoding (state code only in the US)
+-----------------------------------------------------------------------------
+New way: Direct Geocoding (state code only in the US)
 http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
 http://api.openweathermap.org/geo/1.0/direct?q=Ventura,CA,US&limit=5&appid=ce927b7285f4ccf08f697c8c5db6e7bb
 http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=ce927b7285f4ccf08f697c8c5db6e7bb
 
+Incomplete informaiton
+http://api.openweathermap.org/geo/1.0/direct?q=Ventura,,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+http://api.openweathermap.org/geo/1.0/direct?q=ventura,,us&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+
+
+Geocode by Zip
 http://api.openweathermap.org/geo/1.0/zip?zip={zip code},{country code}&appid={API key}
 http://api.openweathermap.org/geo/1.0/zip?zip=93001,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+
 Country Code = Optional
+without Country code
+http://api.openweathermap.org/geo/1.0/zip?zip=93001&appid=ce927b7285f4ccf08f697c8c5db6e7bb
 
 
 
