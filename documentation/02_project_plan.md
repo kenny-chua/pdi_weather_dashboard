@@ -69,14 +69,20 @@ Extend functionlity:
 
 ## Phase 5: Version 2.1
 
+Extend more functionality:
+
+* Units conversion, metric or imperial?
+
+## Phase 6: Version 2.2
+
 * Refactoring?
 
-## Phase 6: Version 3.0
+## Phase 7: Version 3.0
 
 * Graphical User Interface?
 * Browser Interface?
 
-## Phase 7: Version 3.1
+## Phase 8: Version 3.1
 
 * Add automatic location detection?
 * Personalize to the User?

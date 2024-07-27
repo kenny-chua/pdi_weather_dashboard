@@ -60,7 +60,7 @@ def get_weather(lat, lon):
 print("Hi there!!\n")
 # Ask the user for location information
 print(
-    "Welcome to OpenWeatherPy. Plese enter the following location information. Press Enter if you do not have the information"
+    "Welcome to OpenWeatherPy. Plese enter the following location information. Only City is required. Just press <Enter> if you do not have the information:"
 )
 city = input("City: ")
 state_code = input("State Code, only applicable to the USA: ")
