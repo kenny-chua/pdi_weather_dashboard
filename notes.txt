@@ -1,0 +1,74 @@
+APIKEY
+ce927b7285f4ccf08f697c8c5db6e7bb
+
+URL space = %20 (no need to put in, url fixes itself)
+
+ISO
+https://www.iso.org/obp/ui/#search
+
+Current Weather API URL Contruct
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode={mode}&units={units}&lang={lang}
+
+Example:
+https://api.openweathermap.org/data/2.5/weather?lat=34.274&lon=-119.232&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+
+
+Geocoding:
+City:
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&mode={mode}&units={units}&lang={lang}
+
+City Example:
+https://api.openweathermap.org/data/2.5/weather?q=Ventura&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+
+
+City Name, Country Code
+https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}&mode={mode}&units={units}&lang={lang}
+
+City Name, Country Code Example
+https://api.openweathermap.org/data/2.5/weather?q=Ventura,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+
+City Name, State Code and Country Code
+https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}&mode={mode}&units={units}&lang={lang}
+
+City Name, State Code and Country Code Example
+https://api.openweathermap.org/data/2.5/weather?q=Ventura,US-CA,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+
+City ID (use city.list.json.gz)
+https://api.openweathermap.org/data/2.5/weather?id=5405878&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+Zip Code (if country = blank, assume USA)
+https://api.openweathermap.org/data/2.5/weather?zip=93001,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode=json&units=imperial&lang=en
+
+
+Direct Geocoding (state code only in the US)
+http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+http://api.openweathermap.org/geo/1.0/direct?q=Ventura,CA,US&limit=5&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+
+http://api.openweathermap.org/geo/1.0/zip?zip={zip code},{country code}&appid={API key}
+http://api.openweathermap.org/geo/1.0/zip?zip=93001,US&appid=ce927b7285f4ccf08f697c8c5db6e7bb
+Country Code = Optional
+
+
+
+units:
+standard (Kelvin)
+metric (Celsius)
+imperial (Fahrenheit)
+
+mode:
+x: JSON
+html
+xml
+
+.env
+EMAIL=kenny.chua.edu@outlook.com
+PASSWORD=780325Dejavu
+API_KEY=ce927b7285f4ccf08f697c8c5db6e7bb
+WEATHER_URL=https://api.openweathermap.org/data/2.5/weather
+GEOCODE_URL=https://api.openweathermap.org/data/2.5/weather?q
+GENERIC_API_URL=https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=ce927b7285f4ccf08f697c8c5db6e7bb&mode={mode}&units={units}&lang={lang}

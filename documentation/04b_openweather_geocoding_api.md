@@ -308,7 +308,6 @@ http://api.openweathermap.org/geo/1.0/zip?zip=E14,GB&appid={API key}
 ## Zip/Postal Code JSON Response
 
 ``` json
-                
 {
   "zip": "90210",
   "name": "Beverly Hills",
@@ -339,7 +338,6 @@ http://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&ap
 ## Example Reverse Geocoding JSON Response
 
 ``` json title="Example Reverse Geocoding API Response"
-                   
 [
     {
         "name": "City of London",
