@@ -17,4 +17,12 @@
 2. Researched deserializing JSONs
 3. Created weather dashboard POC (version poc)
 4. Created weather dashboard MVP (version 1.0)
-5. Updated Project Plan
+5. Updated Project Plan with more ideas and phases
+    * Phase 2
+    * Phase 3
+    * Phase 4
+    * Phase 5
+    * Phase 6
+    * Phase 7
+
+*To be reviewed with Russell
